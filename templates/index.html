@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemanfaatan Facial Landmark Detection Sebagai Alat Pengawasan Ujian Online</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pemanfaatan Facial Landmark Detection Sebagai Alat Pengawasan Ujian Online</h1>
+        </header>
+        <main>
+            <div class="video-container">
+                <video id="camera" autoplay></video>
+                <div id="overlay">
+                    <p>Gaze Direction: <span id="gazeDirection">-</span></p>
+                    <p>Number of Faces: <span id="numFaces">-</span></p>
+                </div>
+            </div>
+            <div class="exam-content">
+                <h2>Ujian Umum 1</h2>
+                <p>1. Menurut anda fitur deteksi apa yang perlu ditambahkan?</p>
+                <input type="text" id="answer1">
+                <p>2. Berikan saya masukan lainnya</p>
+                <input type="text" id="answer2">
+            </div>
+            <button onclick="submitExam()">Submit</button>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

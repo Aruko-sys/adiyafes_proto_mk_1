@@ -1,0 +1,9 @@
+cmake
+dlib-bin
+numpy==1.26.4
+opencv-python==4.10.0.82
+setuptools==70.0.0
+flask
+pandas
+openpyxl
+opencv-python-headless
